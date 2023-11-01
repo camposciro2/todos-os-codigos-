@@ -1,0 +1,82 @@
+body {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+
+.navbar {
+    background-color: #091326;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #2DA7F2;
+    color: #fff;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+
+.section-title span {
+    color: #185175;
+}
+
+#sobre-o-site,
+#mais-vendido,
+#fale-conosco {
+    background-color: rgba(236, 239, 243, 0.714)
+}
+
+.social-link li {
+    list-style: none;
+    display: inline;
+}
+
+.social-link a {
+    text-decoration: none;
+}
+
+.classe-icon {
+    width: 35px;
+    height: auto;
+}
+
+footer {
+    background-color: #091326;
+}
+
+footer h5 {
+    color: aqua;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #f2a154;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
