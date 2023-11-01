@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Projetos
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Pagina Principal</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="gamesShop.html">Games Shop</a></li>
+                <li><a class="dropdown-item" href="#">Projeto02</a></li>
+                <li><a class="dropdown-item" href="#">Projeto03</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Sobre Mim
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Pagina Principal</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="sobre.html">Descubra mais...</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Contato
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Pagina Principal</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="contato.html">Fale comigo</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Rede Social
+            </button>
+            <ul class="dropdown-menu menu-icone">
+                <li><a href="https://www.instagram.com/douglasccampos88/" target="_blank"><i
+                            class="bi bi-instagram dropdown-item"> Instagram</i></a></li>
+                <li><a href="https://web.facebook.com/profile.php?id=100092199020997" target="_blank"><i
+                            class="bi bi-facebook dropdown-item"> Facebook</i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp dropdown-item"> Whatsapp</i></a></li>
+                <li><a href="https://github.com/camposciro2" target="_blank"><i class="bi bi-github dropdown-item">
+                            GitHub</i></a></li>
+                <li><a href="https://www.linkedin.com/in/douglas-ciro-de-campos-a35158228/" target="_blank"><i
+                            class="bi bi-linkedin dropdown-item"> LinkeDin</i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <body style="background-color: #edf5fd;">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-primary mb-4">Formulário de Contato</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome-completo" class="form-label fw-bold">Nome Completo:</label>
+                            <input type="text" class="form-control border border-primary" id="nome-completo"
+                                name="nome-completo">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="endereco-email" class="form-label fw-bold">Endereço de E-mail:</label>
+                            <input type="email" class="form-control border border-primary" id="endereco-email"
+                                name="endereco-email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone-contato" class="form-label fw-bold">Telefone de Contato:</label>
+                            <input type="tel" class="form-control border border-primary" id="telefone-contato"
+                                name="telefone-contato">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label fw-bold">Assunto:</label>
+                            <input type="text" class="form-control border border-primary" id="assunto" name="assunto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold">Mensagem:</label>
+                            <textarea class="form-control border border-primary" id="mensagem"
+                                name="mensagem"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Preferência de Contato:</label>
+                            <select class="form-select border border-primary" name="preferencia-contato">
+                                <option value="email">E-mail</option>
+                                <option value="telefone">Telefone</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Como você nos encontrou?</label>
+                            <select class="form-select border border-primary" name="como-encontrou">
+                                <option value="web">Pesquisa na Web</option>
+                                <option value="redes-sociais">Redes Sociais</option>
+                                <option value="indicacao">Indicação de Amigo</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Motivo do Contato:</label>
+                            <select class="form-select border border-primary" name="motivo-contato">
+                                <option value="duvidas">Dúvidas Gerais</option>
+                                <option value="profissional">Contato Profissional</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Prioridade da Mensagem:</label>
+                            <select class="form-select border border-primary" name="prioridade-mensagem">
+                                <option value="alta">Alta</option>
+                                <option value="media">Média</option>
+                                <option value="baixa">Baixa</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input border border-dark" id="aceito-termos"
+                                name="aceito-termos">
+                            <label class="form-check-label fw-bold" for="aceito-termos">Li e concordo com os termos do
+                                site</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

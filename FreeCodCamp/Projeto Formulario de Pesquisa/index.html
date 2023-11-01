@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario de Pesquisa</h1>
+            <p id="description" class="description text-center">
+                Obrigado por dedicarem o seu tempo!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu Nome" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Idade<span class="clue">(Opcional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                    placeholder="Idade" />
+            </div>
+            <div class="form-group">
+                <p>Qual opção melhor descreve sua função atual?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Selecione uma Opção</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Trabalho em Tempo Integral</option>
+                    <option value="preferNo">Prefere não Responder</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Você recomendaria o site para um amigo ?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitivamente</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Talvez</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Não Tenho
+                    Certeza</label>
+            </div>
+
+            <div class="form-group">
+                <p>Qual a sua busca neste site ?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Selecione uma Opção</option>
+                    <option value="challenges">Trabalho</option>
+                    <option value="projects">Viajens</option>
+                    <option value="community">Comunidades</option>
+                    <option value="openSource">Culinária</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    O que você gostaria de ver melhorado?
+                    <span class="clue">(Marque todos os que se aplicam)</span>
+                </p>
+
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Novos
+                    projetos de Viajens</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Maior foco
+                    em Culinária</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Novas
+                    áreas de Trabalho</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Desafios</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox"
+                        class="input-checkbox" />Comunidade de debates</label>
+                <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Salas de
+                    bate-papo</label>
+                <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Vídeos</label>
+                <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />Encontros da
+                    cidade</label>
+                <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
+                <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+                <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Cursos
+                    adicionais</label>
+            </div>
+
+            <div class="form-group">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Digite seu comentario aqui..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
